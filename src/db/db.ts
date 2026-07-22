@@ -8,4 +8,3 @@ config({ path: ".env" }); // or .env.local
 
 const sql = neon(serverEnv.DATABASE_URL!);
 export const db = drizzle({ client: sql, relations });
-
